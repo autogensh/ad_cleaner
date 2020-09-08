@@ -25,6 +25,11 @@
 	// 需要直接注入页面的JS
 	"content_scripts": 
 	[
+                // 草民电影网
+		{
+			"matches": ["*://www.cmcm5.com/", "*://www.cmcm5.com/*"],
+			"js": ["js/lib.js", "js/metvb1.com/index.js"]
+		},
                 // 港剧网
 		{
 			"matches": ["*://www.metvb1.com/", "*://www.metvb1.com/*"],
